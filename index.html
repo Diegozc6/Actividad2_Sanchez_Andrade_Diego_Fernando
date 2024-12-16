@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Inicio</title>
+  <script src="components\header.js" defer></script>
+  <script src="components\menu.js" ></script>
+  <script src="components\main.js" defer></script>
+  <script src="components\footer.js" defer></script>
+  <script src="custom-table.js"></script>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <app-header ></app-header>
+
+  <!-- Menu -->
+  <app-menu> 
+    <a href="index.html" class="active">Inicio</a>
+    <a href="SocialProfile.html">Perfil</a>
+    <a href="gallery.html">Galería</a>
+    <a href="customTable.html">Tabla</a>
+  </app-menu>
+
+  <!-- Main Content -->
+  <app-main>
+    <h1>Bienvenido</h1>
+    <p>Esta es la página de inicio de la aplicación.</p>
+    <p>Usa los componentes personalizados para estructurar y estilizar tu sitio web de forma eficiente.</p>
+  </app-main>
+
+  <!-- Footer -->
+  <app-footer>
+    <span slot="text">&copy; 2024 Mi Aplicación. Todos los derechos reservados.</span>
+  </app-footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  
+  <script src="components/header.js"></script>
+  <script src="components/footer.js"></script>
+  <script src="components/menu.js"></script>
+  <script src="components/gallery.js"></script>
+  <script src="components/main.js"></script>
+  <script src="components/socialProfile.js"></script>
+  
+</head>
+<body>
+  <!-- Utilización de los componentes definidos -->
+  <app-header></app-header>
+  
+    <!-- Componente de Menú -->
+    <app-menu>
+        <a href="index.html">Inicio</a>
+        <a href="SocialProfile.html">Perfil</a>
+        <a href="gallery.html">Galería</a>
+        <a href="customTable.html">Tabla</a>
+    </app-menu>
+  
+  <app-main>
+    <h2>Galería de PokeAPI</h2>
+    <!-- Galería dinámica con slot -->
+        
+    <app-gallery endpoint="https://pokeapi.co/api/v2/pokemon?limit=10">
+        <h2>Galería de Pokémon</h2>
+        <p>Explora los Pokémon disponibles.</p>
+    </app-gallery>
+  </app-main>
+
+  <app-footer></app-footer>
+</body>
+</html>

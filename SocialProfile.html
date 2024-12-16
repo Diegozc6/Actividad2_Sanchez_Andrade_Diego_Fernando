@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Profile</title>
+ 
+  
+</head>
+<body>
+  <!-- Utilización de los componentes definidos -->
+  <app-header ></app-header>
+  
+    <!-- Componente de Menú -->
+    <app-menu bg-color="#fff" link-color="#333" hover-color="#555" active-color="#ff6600">
+        <a href="index.html">Inicio</a>
+        <a href="SocialProfile.html">Perfil</a>
+        <a href="gallery.html">Galería</a>
+        <a href="customTable.html">Tabla</a>
+    </app-menu>
+  
+  <app-main>
+    <h2>Perfil de Usuario</h2>
+    <social-profile
+    nombre="Diego F. Sanchez Andrade"
+    avatar="IMG_20240719_144419_727.jpg"
+    bio="Estudiante de la carrera de Tecnologias de la informacion. ESPE"
+    fechaNacimiento="01 de Marza de 1996"
+    lugarNacimiento="Ciudad de Zaruma, el Oro, Ecuador."
+    lugarResidencia="Zaruma, El Oro"
+    telefonoContacto="0979663548">
+  </social-profile> 
+  </app-main>
+
+  <app-footer></app-footer>
+
+ <!-- Carga de Scripts -->
+ <script src="components/header.js"></script>
+ <script src="components/footer.js"></script>
+ <script src="components/main.js"></script>
+ <script src="components/menu.js"></script>
+ <script src="components/socialProfile.js"></script>
+ 
+</body>
+</html>
